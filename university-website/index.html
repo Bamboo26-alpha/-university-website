@@ -3,28 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UniGuide - หน้าแรก</title>
+  <title>UniGuide - มหาวิทยาลัยศิลปากร</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">UniGuide</a>
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="index.html">หน้าแรก</a>
-        <a class="nav-link" href="faculty.html">คณะ</a>
-        <a class="nav-link" href="about.html">เกี่ยวกับ</a>
-        <a class="nav-link" href="contact.html">ติดต่อ</a>
-      </div>
-    </div>
+      <a class="navbar-brand" href="index.html">หน้าแรก</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link active" href="index.html">หน้าแรก</a>
+          <a class="nav-link" href="faculty.html">คณะ</a>
+          <a class="nav-link" href="about.html">เกี่ยวกับ</a>
+          <a class="nav-link" href="contact.html">ติดต่อ</a>
+   </div>
+   </div>
+  </div>
   </nav>
 
-  <div class="container mt-5">
-    <h1>ยินดีต้อนรับสู่ UniGuide</h1>
-    <p>แหล่งรวมข้อมูลคณะและสาขาวิชา</p>
+  <div class="container py-5">
+    <h1>ยินดีต้อนรับสู่ Uniguide</h1>
+    <p class="lead">รวมข้อมูลคณะและสาขาวิชา มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ ยกตัวอย่าง3คณะนี้</p>
+    <hr>
+
+    <div class="row mt-4">
+    <div class="col-md-4">
+    <div class="card mb-3">
+   <div class="card-body">
+    
+    <h5 class="card-title">คณะเทคโนโลยีสารสนเทศและการสื่อสาร</h5>
+    <p class="card-text">พัฒนาผู้เชี่ยวชาญด้านเทคโนโลยีดิจิทัลและการสื่อสาร</p>
+    <a href="faculty.html" class="btn btn-primary btn-sm">เพิ่มเติม</a>
+        </div>
+        </div>
+        </div>
+    <div class="col-md-4">
+        <div class="card mb-3">
+       <div class="card-body">
+          <h5 class="card-title">คณะวิทยาศาสตร์</h5>
+          <p class="card-text">ศึกษาพื้นฐานทางวิทยาศาสตร์ การทดลอง และการวิจัย</p>
+          <a href="faculty.html" class="btn btn-primary btn-sm">เพิ่มเติม</a>
+       </div>
+    
+      </div>
+      </div>
+      <div class="col-md-4">
+      <div class="card mb-3">
+        <div class="card-body">
+         <h5 class="card-title">คณะวิทยาการจัดการ</h5>
+         <p class="card-text">เรียนรู้ด้านธุรกิจ การบริหาร และการบริการ</p>
+         <a href="faculty.html" class="btn btn-primary btn-sm">เพิ่มเติม</a>
+   </div>
+   </div>
+   </div>
+</div>
+
+    <div class="row text-center mt-3">
+      <div class="col-3"><h4>มี 11</h4><p>คณะ</p></div>
+      <div class="col-3"><h4>มี 50+</h4><p>สาขาวิชา</p></div>
+      <div class="col-3"><h6>นครปฐม,พระราชวังสนามจันทร์</h6><p>วิทยาเขต</p></div>
+      <div class="col-3"><h4>SU</h4><p>มหาวิทยาลัยศิลปากร</p></div>
+    </div>
   </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">กลุ่มTeletubbies | คณะและสาขาใน มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

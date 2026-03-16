@@ -3,28 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UniGuide -เกี่ยวกับเรา</title>
+  <title>UniGuide - เกี่ยวกับเรา</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">UniGuide</a>
-      <div class="navbar-nav ms-auto">
-        <a class="nav-link" href="index.html">หน้าแรก</a>
-        <a class="nav-link" href="faculty.html">คณะ</a>
-        <a class="nav-link" href="about.html">เกี่ยวกับ</a>
-        <a class="nav-link" href="contact.html">ติดต่อ</a>
+      <a class="navbar-brand" href="index.html">เกี่ยวกับ</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav ms-auto">
+          <a class="nav-link" href="index.html">หน้าแรก</a>
+          <a class="nav-link" href="faculty.html">คณะ</a>
+          <a class="nav-link active" href="about.html">เกี่ยวกับ</a>
+          <a class="nav-link" href="contact.html">ติดต่อ</a>
+        </div>
       </div>
     </div>
   </nav>
 
-  <div class="container mt-5">
+  <div class="container py-5">
     <h1>เกี่ยวกับเรา</h1>
-    <p>แหล่งรวมข้อมูลคณะและสาขาวิชา</p>
+    <p class="lead">มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์</p>
+    <hr>
+
+    <h4> ประวัติความเป็นมา</h4>
+    <p>มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ ตั้งอยู่ที่จังหวัดนครปฐม เป็นหนึ่งในวิทยาเขตสำคัญของมหาวิทยาลัยศิลปากร ซึ่งเป็นมหาวิทยาลัยด้านศิลปะและวิชาการชั้นนำของประเทศไทย วิทยาเขตนี้ก่อตั้งขึ้นเพื่อขยายโอกาสทางการศึกษาและรองรับการเติบโตของมหาวิทยาลัย โดยมีการจัดการเรียนการสอนในหลากหลายสาขา ทั้งมนุษยศาสตร์ วิทยาศาสตร์ เทคโนโลยี และการบริหารจัดการ ปัจจุบันเป็นศูนย์กลางการเรียนรู้ขนาดใหญ่ที่มีคณะและหน่วยงานจำนวนมาก พร้อมทั้งสภาพแวดล้อมทางวิชาการและวัฒนธรรมที่เอื้อต่อการพัฒนาความรู้และความคิดสร้างสรรค์ของนักศึกษาอย่างรอบด้าน</p>
+
+    <hr>
+
+    <h4> เกี่ยวกับเว็บไซต์นี้</h4>
+    <p>UniGuide คือเว็บไซต์ที่รวบรวมข้อมูลคณะและสาขาวิชาของมหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์ เพื่อช่วยให้นักศึกษาและผู้สนใจสามารถค้นหาข้อมูลได้ง่ายและสะดวกยิ่งขึ้น จัดทำโดยนักศึกษากลุ่มหนึ่งในรายวิชาการพัฒนาเว็บไซต์</p>
+
+    <hr>
+
+    <h4>ผู้จัดทำ</h4>
+    <div class="row mt-3">
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center p-3">
+          <h5> ธัญกร ปักโคทานัง</h5>
+          <p class="text-muted mb-0">680710802</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center p-3">
+          <h5>กิตติพัฒน์ ยางเดิม</h5>
+          <p class="text-muted mb-0">680710791 </p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center p-3">
+          <h5>ชยธร พรหมณี</h5>
+          <p class="text-muted mb-0">680711046</p>
+        </div>
+      </div>
+      <div class="col-md-3 col-6 mb-3">
+        <div class="card text-center p-3">
+          <h5>พชรวรรษ ศรีกัลยา</h5>
+          <p class="text-muted mb-0">680710830</p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">กลุ่มTeletubbies | คณะและสาขาใน มหาวิทยาลัยศิลปากร วิทยาเขตพระราชวังสนามจันทร์</p>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
