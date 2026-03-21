@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Sarabun', sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a6e 0%, #2d5a8e 40%, #1e7a6e 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+/* ---- Blob decorations ---- */
+.blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.4;
+  pointer-events: none;
+  z-index: 0;
+}
+.blob-1 {
+  width: 400px; height: 400px;
+  background: #7b5ea7;
+  top: -100px; right: -100px;
+}
+.blob-2 {
+  width: 350px; height: 350px;
+  background: #2ec4b6;
+  bottom: -80px; left: -80px;
+}
+.blob-3 {
+  width: 250px; height: 250px;
+  background: #f4a261;
+  top: 40%; right: 10%;
+}
+
+/* ---- Navbar ---- */
+.glass-nav {
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.navbar-brand {
+  font-size: 1.3rem;
+}
+.nav-link {
+  font-size: 1rem;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+.nav-link:hover, .nav-link.active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ---- Hero Section ---- */
+.hero-section {
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Page Header (non-hero pages) ---- */
+.page-header {
+  padding: 140px 0 60px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Glass Card ---- */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  transition: background 0.3s, transform 0.2s;
+}
+.glass-card:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+/* ---- Buttons ---- */
+.btn-glass {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  backdrop-filter: blur(10px);
+  border-radius: 50px;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.35);
+  color: white;
+}
+.btn-glass-sm {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.btn-glass-sm:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+/* ---- Faculty Icon ---- */
+.faculty-icon {
+  font-size: 2rem;
+}
+
+/* ---- Branch Tags ---- */
+.branch-tag {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.85);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  text-align: center;
+  width: 100%;
+}
+
+/* ---- Team Card ---- */
+.team-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+}
+.team-avatar {
+  font-size: 2.5rem;
+}
+
+/* ---- Contact Items ---- */
+.contact-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+.contact-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+/* ---- Footer ---- */
+.glass-footer {
+  background: rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 1;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-section h1 { font-size: 2rem; }
+  .blob { display: none; }
+}
